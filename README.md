@@ -23,6 +23,19 @@ Create directory for commands
 mkdir commands
 ```
 
+Autoload your commands with composer - add autoload into composer.json
+```
+"autoload": {
+    "psr-4": {
+        "PixelConsole\\": "commands"
+    }
+}
+```
+and run
+```
+composer dump-autoload
+```
+
 ## Creating commands
 To be able to create new commands, you need to instantiate the CLI in your project, following the steps higher.
 ```
