@@ -28,3 +28,4 @@ To be able to create new commands, you need to instantiate the CLI in your proje
 ```
 php cli make:command CommandName
 ```
+For more information about commands, refer to [Symfony console docs](https://symfony.com/doc/current/components/console.html).
