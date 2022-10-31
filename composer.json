@@ -1,0 +1,30 @@
+{
+    "name": "erikgreasy/wp-console",
+    "description": "Custom cli for WordPress, inspired by Laravel's artisan.",
+    "keywords": [
+        "erikgreasy",
+        "wordpress-cli"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "erikgreasy",
+            "email": "erik.masny@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^8.0",
+        "symfony/console": "^6.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Erikgreasy\\WpConsole\\": "src"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
