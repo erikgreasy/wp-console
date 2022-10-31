@@ -2,6 +2,7 @@
 
 namespace Erikgreasy\WpConsole;
 
+use Erikgreasy\WpConsole\Commands\Database\Dump;
 use Symfony\Component\Console\Application;
 use Erikgreasy\WpConsole\Commands\MakeCommand;
 
@@ -14,6 +15,8 @@ class ConsoleApplication extends Application
         $this->add(
             new MakeCommand()
         );
+
+        $this->add(new Dump());
 
         $this->autoloadProjectCommands($projectCommandsFolderPath);
 

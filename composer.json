@@ -15,6 +15,7 @@
     ],
     "require": {
         "php": "^8.0",
+        "druidfi/mysqldump-php": "^1.0",
         "symfony/console": "^6.0"
     },
     "autoload": {
