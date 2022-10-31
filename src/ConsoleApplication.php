@@ -3,6 +3,7 @@
 namespace Erikgreasy\WpConsole;
 
 use Erikgreasy\WpConsole\Commands\Database\Dump;
+use Erikgreasy\WpConsole\Commands\Database\Import;
 use Symfony\Component\Console\Application;
 use Erikgreasy\WpConsole\Commands\MakeCommand;
 
@@ -17,6 +18,7 @@ class ConsoleApplication extends Application
         );
 
         $this->add(new Dump());
+        $this->add(new Import());
 
         $this->autoloadProjectCommands($projectCommandsFolderPath);
 
