@@ -2,6 +2,11 @@
 CLI application inspired by artisan in Laravel framework. Based on the Symfony console component.
 
 ## Instantiating in project
+Install with composer
+```
+composer require erikgreasy/wp-console
+```
+
 create "cli" (alernative to artisan) file in the root of your project
 ```PHP
 #!/usr/bin/env php
